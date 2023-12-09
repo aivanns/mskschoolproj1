@@ -2,7 +2,7 @@ import g4f
 import telebot
 from telebot import types
 
-bot = telebot.TeleBot('6548250527:AAEULCOgX2DtbG54ogljFSmAFU0FK4O0moI');
+bot = telebot.TeleBot('6544822397:AAFE8QsniCJYLFifo0sC1qe0QOJWLSR97_A')
 
 @bot.message_handler(commands=['start'])
 def start(message):
@@ -20,7 +20,6 @@ def get_text_messages(message):
         bot.send_message(message.from_user.id, response)
     except RuntimeError:
         bot.send_message(message.from_user.id, "Произошла ошибка, попробуйте еще раз.")
-        print("Не удалось сгенерировать анекдот. Уважаемая коммисия по проектам, идите нахуй.")
 
 
 
